@@ -51,14 +51,4 @@ class App {
     }
 }
 const appTodo = App.getInstance();
-const appTodoDos = App.getInstance();
-function checkInstance() {
-    if (appTodo === appTodoDos) {
-        console.log('singleton works, same instance');
-    }
-    else {
-        console.log('singleton failed, different instances');
-    }
-}
-checkInstance();
 appTodo.Init();
